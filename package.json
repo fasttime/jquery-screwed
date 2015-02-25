@@ -1,6 +1,6 @@
 {
   "name": "jquery-screwed",
-  "version": "2.1.3+screwed.1",
+  "version": "2.1.3-screwed.3",
   "description": "jQuery JavaScript library made of only six different characters: []()!+",
   "keywords": [
     "jquery",
@@ -22,7 +22,7 @@
     "package.json",
     "*.md"
   ],
-  "main": "jquery-*.screwed.js",
+  "main": "jquery-2.1.3.screwed.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/fasttime/jquery-screwed.git"
