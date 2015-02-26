@@ -32,7 +32,7 @@
     "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-jshint": "~0.11.0",
     "grunt-jscs": "~1.5.0",
-    "grunt-shell": "~1.1.1",
+    "grunt-shell": "~1.1.2",
     "jquery": "2.1.3",
     "jscrewit": ">=1.4.2"
   }
