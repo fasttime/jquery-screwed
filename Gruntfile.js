@@ -106,7 +106,7 @@ module.exports =
                     {
                         command:
                             'node node_modules/jscrewit/screw.js ' +
-                            '-w -f SELF ' +
+                            '-ct -f SELF ' +
                             'node_modules/jquery/dist/cdn/jquery-2.1.3.min.js ' +
                             'jquery-2.1.3.screwed.js'
                     }
