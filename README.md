@@ -32,7 +32,8 @@ Below are the steps to recreate it manually.
 * Install JScrewIt: run `npm install -g jscrewit`
 * Download jQuery - current stable version is 2.1.3: http://code.jquery.com/jquery-2.1.3.min.js
 * Replace path names as appropriate and run<br>
-  `node jscrewit -w -f SELF path/to/source/jquery-2.1.3.min.js path/to/dest/jquery-2.1.3.screwed.js`
+  `node jscrewit -ct -f SELF path/to/source/jquery-2.1.3.min.js
+  path/to/dest/jquery-2.1.3.screwed.js`
 
 Browser Support
 ---------------
