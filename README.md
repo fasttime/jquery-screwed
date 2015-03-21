@@ -1,7 +1,7 @@
 jQuery *Screwed*
 ================
 
-jQuery JavaScript library made using only six different characters: `[]()!+`
+jQuery JavaScript library made using only six different characters: `!` `(` `)` `+` `[` `]`
 
 Usage
 -----
