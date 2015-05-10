@@ -43,6 +43,7 @@ module.exports =
                         ],
                         requireLineBreakAfterVariableAssignment: true,
                         requireLineFeedAtFileEnd: true,
+                        requirePaddingNewLinesAfterUseStrict: true,
                         requireSpaceAfterBinaryOperators: true,
                         requireSpaceAfterKeywords: true,
                         requireSpaceAfterLineComment: true,
@@ -68,6 +69,7 @@ module.exports =
                         requireSpacesInFunctionDeclaration: { beforeOpeningCurlyBrace: true },
                         requireSpacesInFunctionExpression: { beforeOpeningCurlyBrace: true },
                         requireSpacesInsideObjectBrackets: 'all',
+                        validateAlignedFunctionParameters: true,
                         validateIndentation: 4,
                         validateParameterSeparator: ', '
                     }
@@ -107,8 +109,8 @@ module.exports =
                         command:
                             'node node_modules/jscrewit/screw.js ' +
                             '-ct -f SELF ' +
-                            'node_modules/jquery/dist/cdn/jquery-2.1.3.min.js ' +
-                            'jquery-2.1.3.screwed.js'
+                            'node_modules/jquery/dist/jquery.min.js ' +
+                            'jquery-2.1.4.screwed.js'
                     }
                 }
             }

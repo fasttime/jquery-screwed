@@ -1,7 +1,7 @@
 {
   "name": "jquery-screwed",
-  "version": "2.1.3-screwed.5",
-  "description": "jQuery JavaScript library made of only six different characters: []()!+",
+  "version": "2.1.4-screwed.1",
+  "description": "jQuery JavaScript library made of only six different characters: ! ( ) + [ ]",
   "keywords": [
     "jquery",
     "jscrewit",
@@ -22,7 +22,7 @@
     "package.json",
     "*.md"
   ],
-  "main": "jquery-2.1.3.screwed.js",
+  "main": "jquery-2.1.4.screwed.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/fasttime/jquery-screwed.git"
@@ -30,10 +30,10 @@
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-jshint": "~0.11.1",
-    "grunt-jscs": "~1.5.0",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-jscs": "~1.8.0",
     "grunt-shell": "~1.1.2",
-    "jquery": "2.1.3",
+    "jquery": "2.1.4",
     "jscrewit": "~1.5.3"
   }
 }
