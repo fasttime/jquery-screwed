@@ -1,6 +1,6 @@
 {
   "name": "jquery-screwed",
-  "version": "2.1.4-screwed.1",
+  "version": "2.1.4-screwed.2",
   "description": "jQuery JavaScript library made of only six different characters: ! ( ) + [ ]",
   "keywords": [
     "jquery",
@@ -35,6 +35,6 @@
     "grunt-jscs": "~1.8.0",
     "grunt-shell": "~1.1.2",
     "jquery": "2.1.4",
-    "jscrewit": "~1.5.4"
+    "jscrewit": "~1.6.0"
   }
 }
