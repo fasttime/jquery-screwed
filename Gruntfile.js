@@ -17,6 +17,7 @@ module.exports =
                         // Encourage use of abbreviations: "char", "obj", "str".
                         disallowIdentifierNames: ['character', 'object', 'string'],
                         disallowMixedSpacesAndTabs: true,
+                        disallowNamedUnassignedFunctions: true,
                         disallowSpaceAfterObjectKeys: true,
                         disallowSpaceAfterPrefixUnaryOperators: true,
                         disallowSpaceBeforePostfixUnaryOperators: true,
@@ -27,7 +28,7 @@ module.exports =
                         disallowSpacesInsideParentheses: true,
                         disallowTrailingWhitespace: 'ignoreEmptyLines',
                         disallowYodaConditions: true,
-                        requireBlocksOnNewline: 1,
+                        requireBlocksOnNewline: true,
                         requireKeywordsOnNewLine:
                         [
                             'break',
@@ -39,27 +40,22 @@ module.exports =
                             'else',
                             'finally',
                             'for',
+                            'return',
                             'switch',
                             'throw',
-                            'try'
+                            'try',
+                            'while'
                         ],
                         requireLineBreakAfterVariableAssignment: true,
                         requireLineFeedAtFileEnd: true,
+                        requireNewlineBeforeBlockStatements: true,
                         requirePaddingNewLinesAfterUseStrict: true,
                         requireSpaceAfterBinaryOperators: true,
                         requireSpaceAfterKeywords: true,
                         requireSpaceAfterLineComment: true,
                         requireSpaceBeforeBinaryOperators: true,
                         requireSpaceBeforeBlockStatements: true,
-                        requireSpaceBeforeKeywords:
-                        [
-                            'delete',
-                            'if',
-                            'in',
-                            'instanceof',
-                            'return',
-                            'while'
-                        ],
+                        requireSpaceBeforeKeywords: ['delete', 'if', 'in', 'instanceof'],
                         requireSpaceBeforeObjectValues: true,
                         requireSpaceBetweenArguments: true,
                         requireSpacesInAnonymousFunctionExpression:
@@ -72,7 +68,7 @@ module.exports =
                         requireSpacesInFunctionExpression: { beforeOpeningCurlyBrace: true },
                         requireSpacesInsideObjectBrackets: 'all',
                         validateAlignedFunctionParameters: true,
-                        validateIndentation: 4,
+                        validateIndentation: { includeEmptyLines: true, value: 4 },
                         validateParameterSeparator: ', '
                     }
                 },
@@ -84,7 +80,7 @@ module.exports =
                         curly: true,
                         eqeqeq: true,
                         immed: true,
-                        latedef: true,
+                        latedef: 'nofunc',
                         maxlen: 100,
                         newcap: false,
                         noarg: true,
@@ -110,7 +106,7 @@ module.exports =
                     {
                         command:
                             'node node_modules/jscrewit/screw.js ' +
-                            '-ct -f SELF ' +
+                            '-ct -f ANY_DOCUMENT,ANY_WINDOW ' +
                             'node_modules/jquery/dist/jquery.min.js ' +
                             'jquery-2.1.4.screwed.js'
                     }

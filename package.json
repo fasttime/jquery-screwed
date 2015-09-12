@@ -31,10 +31,10 @@
     "grunt": "~0.4.5",
     "grunt-cli": "~0.1.13",
     "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-jshint": "~0.11.2",
-    "grunt-jscs": "~1.8.0",
+    "grunt-contrib-jshint": "~0.11.3",
+    "grunt-jscs": "~2.1.0",
     "grunt-shell": "~1.1.2",
     "jquery": "2.1.4",
-    "jscrewit": "~1.6.0"
+    "jscrewit": "~1.8.0"
   }
 }
