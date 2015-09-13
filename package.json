@@ -35,6 +35,6 @@
     "grunt-jscs": "~2.1.0",
     "grunt-shell": "~1.1.2",
     "jquery": "2.1.4",
-    "jscrewit": "~1.8.0"
+    "jscrewit": "~1.9.0"
   }
 }
