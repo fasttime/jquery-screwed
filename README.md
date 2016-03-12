@@ -9,7 +9,7 @@ Usage
 You can use jQuery Screwed anywhere in your code like the regular jQuery.
 
 ```html
-<script src="jquery-2.2.0.screwed.js"></script>
+<script src="jquery-2.2.1.screwed.js"></script>
 ```
 
 ```html
@@ -30,10 +30,10 @@ Below are the steps to recreate it manually.
 
 * Install [Node.js](http://nodejs.org) if you haven't done so yet.
 * Install JScrewIt: run `npm install -g jscrewit`
-* Download jQuery - current stable version is 2.2.0: http://code.jquery.com/jquery-2.2.0.min.js
+* Download jQuery - current stable version is 2.2.1: http://code.jquery.com/jquery-2.2.1.min.js
 * Replace path names as appropriate and run<br>
-  `node jscrewit -ct -f SELF path/to/source/jquery-2.2.0.min.js
-  path/to/dest/jquery-2.2.0.screwed.js`
+  `node jscrewit -ct -f ANY_DOCUMENT,ANY_WINDOW,HISTORY path/to/source/jquery-2.2.1.min.js
+  path/to/dest/jquery-2.2.1.screwed.js`
 
 Browser Support
 ---------------

@@ -4,14 +4,17 @@
 
 var JSCS_OPTIONS =
 {
+    disallowEmptyBlocks: true,
     // Encourage use of abbreviations: "char", "obj", "str".
     disallowIdentifierNames: ['character', 'object', 'string'],
+    disallowMultipleLineBreaks: true,
     disallowMultipleVarDecl: true,
     disallowNamedUnassignedFunctions: true,
     disallowSpaceAfterObjectKeys: true,
     disallowSpaceAfterPrefixUnaryOperators: true,
     disallowSpaceBeforeComma: { allExcept: ['sparseArrays'] },
     disallowSpaceBeforePostfixUnaryOperators: true,
+    disallowSpaceBeforeSemicolon: true,
     disallowSpacesInCallExpression: true,
     disallowSpacesInFunctionDeclaration: { beforeOpeningRoundBrace: true },
     disallowSpacesInNamedFunctionExpression: { beforeOpeningRoundBrace: true },
@@ -20,6 +23,7 @@ var JSCS_OPTIONS =
     disallowTabs: true,
     disallowTrailingWhitespace: 'ignoreEmptyLines',
     disallowYodaConditions: true,
+    requireAlignedMultilineParams: true,
     requireBlocksOnNewline: true,
     requireEarlyReturn: true,
     requireKeywordsOnNewLine:
@@ -52,16 +56,11 @@ var JSCS_OPTIONS =
     requireSpaceBeforeBlockStatements: true,
     requireSpaceBeforeKeywords: ['delete', 'if', 'in', 'instanceof'],
     requireSpaceBeforeObjectValues: true,
-    requireSpaceBetweenArguments: true,
-    requireSpacesInAnonymousFunctionExpression: { beforeOpeningRoundBrace: true },
     requireSpacesInConditionalExpression: true,
     requireSpacesInForStatement: true,
-    requireSpacesInFunctionDeclaration: { beforeOpeningCurlyBrace: true },
-    requireSpacesInFunctionExpression: { beforeOpeningCurlyBrace: true },
     requireSpacesInsideObjectBrackets: 'all',
     validateAlignedFunctionParameters: true,
-    validateIndentation: { includeEmptyLines: true, value: 4 },
-    validateParameterSeparator: ', '
+    validateIndentation: { includeEmptyLines: true, value: 4 }
 };
 
 var JSHINT_OPTIONS =
@@ -69,7 +68,6 @@ var JSHINT_OPTIONS =
     // Enforcing options
     eqeqeq: true,
     immed: true,
-    latedef: 'nofunc',
     maxlen: 100,
     newcap: false,
     noarg: true,
@@ -107,7 +105,7 @@ module.exports =
                             'node node_modules/jscrewit/screw.js ' +
                             '-ct -f ANY_DOCUMENT,ANY_WINDOW,HISTORY ' +
                             'node_modules/jquery/dist/jquery.min.js ' +
-                            'jquery-2.2.0.screwed.js'
+                            'jquery-2.2.1.screwed.js'
                     }
                 }
             }
