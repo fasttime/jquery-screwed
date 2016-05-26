@@ -105,7 +105,7 @@ module.exports =
                             'node node_modules/jscrewit/screw.js ' +
                             '-ct -f ANY_DOCUMENT,ANY_WINDOW,HISTORY ' +
                             'node_modules/jquery/dist/jquery.min.js ' +
-                            'jquery-2.2.3.screwed.js'
+                            'jquery-2.2.4.screwed.js'
                     }
                 }
             }
