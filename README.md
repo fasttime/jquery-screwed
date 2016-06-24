@@ -39,19 +39,7 @@ Browser Support
 ---------------
 
 jQuery Screwed supports all browsers also
-[supported by jQuery 3.x](http://jquery.com/browser-support/), except for those not compatible with
-JScrewIt.
-
-The table below shows browser support of jQuery and jQuery Screwed.
-Differences are marked in bold.
-
-|                               |        jQuery 3.x        |      jQuery Screwed      |
-|-------------------------------|:------------------------:|:------------------------:|
-| Chrome, Edge, Firefox, Safari | (Current - 1) or Current | (Current - 1) or Current |
-| Internet Explorer             |            9+            |            9+            |
-| Opera                         |         Current          |         Current          |
-| iOS                           |         **7.0+**         |         **7.1+**         |
-| Android                       |           4.0+           |           4.0+           |
+[supported by jQuery 3.x](http://jquery.com/browser-support/).
 
 Credits
 -------
