@@ -16,8 +16,7 @@ module.exports =
                     {
                         command:
                             'node node_modules/jscrewit/screw.js ' +
-                            '-ct -f ANY_DOCUMENT,ANY_WINDOW,HISTORY,INCR_CHAR ' +
-                            'node_modules/jquery/dist/jquery.min.js ' +
+                            '-ct -f BROWSER node_modules/jquery/dist/jquery.min.js ' +
                             'jquery-3.1.1.screwed.js'
                     }
                 }

@@ -20,8 +20,6 @@ $(function(){
 </script>
 ```
 
-See the section [Browser Support](#browser-support) for information about supported browsers.
-
 Creation
 --------
 
@@ -29,10 +27,11 @@ jQuery Screwed was created with [JScrewIt](https://github.com/fasttime/JScrewIt)
 Below are the steps to recreate it manually.
 
 * Install [Node.js](http://nodejs.org) if you haven't done so yet.
-* Install JScrewIt: run `$ npm install -g jscrewit`
-* Download jQuery - current stable version is 3.1.1: http://code.jquery.com/jquery-3.1.1.min.js
+* Install JScrewIt: run in the command line<br>
+  `$ npm install -g jscrewit`
+* Download jQuery—current stable version is 3.1.1: http://code.jquery.com/jquery-3.1.1.min.js
 * Replace path names as appropriate and run<br>
-  `$ node jscrewit -ct -f ANY_DOCUMENT,ANY_WINDOW,HISTORY path/to/source/jquery-3.1.1.min.js
+  `$ node jscrewit -ct -f BROWSER path/to/source/jquery-3.1.1.min.js
   path/to/dest/jquery-3.1.1.screwed.js`
 
 Browser Support

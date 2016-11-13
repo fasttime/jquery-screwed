@@ -16,7 +16,7 @@
   "files": [
     "jquery-*.screwed.js"
   ],
-  "main": "jquery-3.1.1.screwed.js",
+  "main": "jquery-3.1.1.screwed",
   "repository": {
     "type": "git",
     "url": "https://github.com/fasttime/jquery-screwed.git"
@@ -29,8 +29,8 @@
     "grunt-cli": "~1.2.0",
     "grunt-contrib-clean": "~1.0.0",
     "grunt-fasttime-lint": "~0.0.6",
-    "grunt-shell": "~2.0.0",
+    "grunt-shell": "~2.1.0",
     "jquery": "3.1.1",
-    "jscrewit": "~2.2.2"
+    "jscrewit": "~2.3.4"
   }
 }
