@@ -22,15 +22,14 @@
     "url": "https://github.com/fasttime/jquery-screwed.git"
   },
   "scripts": {
-    "build": "npm install && grunt"
+    "build": "npm install && gulp"
   },
   "devDependencies": {
-    "grunt": "~1.0.1",
-    "grunt-cli": "~1.2.0",
-    "grunt-contrib-clean": "~1.0.0",
-    "grunt-fasttime-lint": "~0.0.6",
-    "grunt-shell": "~2.1.0",
+    "del": "~2.2.2",
+    "gulp": "~3.9.1",
+    "gulp-fasttime-lint": "~0.0.6",
     "jquery": "3.1.1",
-    "jscrewit": "~2.3.4"
+    "jscrewit": "~2.3.4",
+    "run-sequence": "~1.2.2"
   }
 }
