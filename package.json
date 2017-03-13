@@ -27,9 +27,9 @@
   "devDependencies": {
     "del": "~2.2.2",
     "gulp": "~3.9.1",
-    "gulp-fasttime-lint": "~0.2.4",
+    "gulp-fasttime-lint": "~0.2.6",
     "jquery": "3.1.1",
-    "jscrewit": "~2.5.1",
+    "jscrewit": "~2.6.0",
     "run-sequence": "~1.2.2"
   }
 }
