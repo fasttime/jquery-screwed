@@ -44,4 +44,4 @@ Credits
 -------
 
 jQuery Screwed is based on [jQuery](https://github.com/jquery/jquery).
-jQuery is Copyright jQuery Foundation and other contributors, and licensed under the MIT license.
+jQuery is Copyright JS Foundation and other contributors, and licensed under the MIT license.
