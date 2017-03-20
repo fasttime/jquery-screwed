@@ -45,7 +45,7 @@ gulp.task(
         var COMMAND =
             'node node_modules/jscrewit/screw.js ' +
             '-ct -f BROWSER node_modules/jquery/dist/jquery.min.js ' +
-            'jquery-3.1.1.screwed.js';
+            'jquery-3.2.1.screwed.js';
         child_process.exec(COMMAND, execCallback);
     }
 );
