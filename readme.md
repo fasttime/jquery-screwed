@@ -9,7 +9,7 @@ Usage
 You can use jQuery Screwed anywhere in your code like the regular jQuery.
 
 ```html
-<script src="jquery-3.2.1.screwed.js"></script>
+<script src="jquery-3.3.1.screwed.js"></script>
 ```
 
 ```html
@@ -26,19 +26,20 @@ Creation
 jQuery Screwed was created with [JScrewIt](https://github.com/fasttime/JScrewIt).
 Below are the steps to recreate it manually.
 
-* Install [Node.js](http://nodejs.org) if you haven't done so yet.
+* Install [Node.js](https://nodejs.org) if you haven't done so yet.
 * Install JScrewIt: run in the command line<br>
   `$ npm install -g jscrewit`
-* Download jQuery—current stable version is 3.2.1: http://code.jquery.com/jquery-3.2.1.min.js
+* Download jQuery—current stable version is 3.3.1: https://code.jquery.com/jquery-3.3.1.min.js
 * Replace path names as appropriate and run<br>
-  `$ node jscrewit -ct -f BROWSER path/to/source/jquery-3.2.1.min.js
-  path/to/dest/jquery-3.2.1.screwed.js`
+  `$ node jscrewit -ct -f BROWSER path/to/source/jquery-3.3.1.min.js
+  path/to/dest/jquery-3.3.1.screwed.js`
 
 Browser Support
 ---------------
 
 jQuery Screwed supports all browsers also
-[supported by jQuery 3.x](http://jquery.com/browser-support/).
+[supported by jQuery 3.x](https://jquery.com/browser-support/).
+Node.js is *not* supported.
 
 Credits
 -------

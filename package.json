@@ -1,6 +1,6 @@
 {
   "name": "jquery-screwed",
-  "version": "3.2.1-screwed.1",
+  "version": "3.3.1-screwed.1",
   "description": "jQuery JavaScript library made of only six different characters: ! ( ) + [ ]",
   "keywords": [
     "jquery",
@@ -16,7 +16,7 @@
   "files": [
     "jquery-*.screwed.js"
   ],
-  "main": "jquery-3.2.1.screwed",
+  "main": "jquery-3.3.1.screwed",
   "repository": {
     "type": "git",
     "url": "https://github.com/fasttime/jquery-screwed.git"
@@ -25,11 +25,11 @@
     "build": "npm install && gulp"
   },
   "devDependencies": {
-    "del": "~2.2.2",
+    "del": "~3.0.0",
     "gulp": "~3.9.1",
-    "gulp-fasttime-lint": "~0.2.6",
-    "jquery": "3.2.1",
-    "jscrewit": "~2.6.1",
-    "run-sequence": "~1.2.2"
+    "gulp-fasttime-lint": "~0.3.0",
+    "jquery": "3.3.1",
+    "jscrewit": "~2.7.0",
+    "run-sequence": "~2.2.1"
   }
 }

@@ -1,38 +1,40 @@
-/* eslint-env node */
-
 'use strict';
 
-var gulp = require('gulp');
+const gulp = require('gulp');
 
-gulp.task(
+gulp.task
+(
     'clean',
-    function ()
+    () =>
     {
-        var del = require('del');
-        
-        var stream = del('*.screwed.js');
+        const del = require('del');
+
+        const stream = del('*.screwed.js');
         return stream;
     }
 );
 
-gulp.task(
+gulp.task
+(
     'lint',
-    function ()
+    () =>
     {
-        var lint = require('gulp-fasttime-lint');
-        
-        var SRC = ['*.js', '!*.screwed.js'];
-        var stream = gulp.src(SRC).pipe(lint());
+        const lint = require('gulp-fasttime-lint');
+
+        const src = ['*.js', '!*.screwed.js'];
+        const options = { envs: ['node'], parserOptions: { ecmaVersion: 6 } };
+        const stream = gulp.src(src).pipe(lint(options));
         return stream;
     }
 );
 
-gulp.task(
+gulp.task
+(
     'screw',
-    function (callback)
+    callback =>
     {
-        var child_process = require('child_process');
-        
+        const child_process = require('child_process');
+
         function execCallback(error, stdout, stderr)
         {
             if (stdout)
@@ -41,21 +43,21 @@ gulp.task(
                 console.error(stderr);
             callback(error);
         }
-        
-        var COMMAND =
-            'node node_modules/jscrewit/screw.js ' +
-            '-ct -f BROWSER node_modules/jquery/dist/jquery.min.js ' +
-            'jquery-3.2.1.screwed.js';
+
+        const COMMAND =
+        'node node_modules/jscrewit/screw.js ' +
+        '-ct -f BROWSER node_modules/jquery/dist/jquery.min.js jquery-3.3.1.screwed.js';
         child_process.exec(COMMAND, execCallback);
     }
 );
 
-gulp.task(
+gulp.task
+(
     'default',
-    function (callback)
+    callback =>
     {
-        var runSequence = require('run-sequence');
-        
+        const runSequence = require('run-sequence');
+
         runSequence(['clean', 'lint'], 'screw', callback);
     }
 );

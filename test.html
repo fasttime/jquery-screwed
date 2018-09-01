@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang='en'>
 <head>
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -17,20 +17,20 @@ function loadScript()
 {
     var script = document.createElement('SCRIPT');
     script.onload =
-        function ()
+    function ()
+    {
+        if (window.$)
         {
-            if (window.$)
-            {
-                statusBlock.className = 'success';
-                statusBlock.textContent = 'jQuery Screwed was loaded correctly.';
-            }
-            else
-            {
-                statusBlock.className = 'failed';
-                statusBlock.textContent = 'jQuery Screwed was not loaded correctly.';
-            }
-        };
-    script.src = 'jquery-3.2.1.screwed.js';
+            statusBlock.className = 'success';
+            statusBlock.textContent = 'jQuery Screwed was loaded correctly.';
+        }
+        else
+        {
+            statusBlock.className = 'failed';
+            statusBlock.textContent = 'jQuery Screwed was not loaded correctly.';
+        }
+    };
+    script.src = 'jquery-3.3.1.screwed.js';
     document.querySelector('head').appendChild(script);
 }
 
@@ -39,7 +39,7 @@ addEventListener('load', handleLoad);
 </script>
 <style>
 
-#statusBlock 
+#statusBlock
 {
     border: thin solid black;
     border-radius: .125em;
@@ -61,7 +61,6 @@ body { font: 24px sans-serif; text-align: center; }
 
 </style>
 <title>jQuery Screwed Test Page</title>
-<body>
 <p>This page tests your browser’s ability to load <a
  href='https://github.com/fasttime/jquery-screwed'>jQuery Screwed</a>.</p>
 <div class='pending' id='statusBlock'>Trying to load jQuery Screwed…</div>
