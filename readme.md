@@ -27,15 +27,15 @@ header.
 
 ### From NPM
 
-* https://cdn.jsdelivr.net/npm/jquery-screwed@3.3.1-screwed.2/jquery-3.3.1.screwed.js
-* https://unpkg.com/jquery-screwed@3.3.1-screwed.2
+* https://cdn.jsdelivr.net/npm/jquery-screwed@3.3.1-screwed.3/jquery-3.3.1.screwed.js
+* https://unpkg.com/jquery-screwed@3.3.1-screwed.3
 
 ### From GitHub
 
-* https://cdn.jsdelivr.net/gh/fasttime/jquery-screwed@3.3.1-screwed.2/jquery-3.3.1.screwed.js
-* https://cdn.staticaly.com/gh/fasttime/jquery-screwed/3.3.1-screwed.2/jquery-3.3.1.screwed.js
-* https://gitcdn.xyz/repo/fasttime/jquery-screwed/3.3.1-screwed.2/jquery-3.3.1.screwed.js
-* https://rawcdn.githack.com/fasttime/jquery-screwed/3.3.1-screwed.2/jquery-3.3.1.screwed.js
+* https://cdn.jsdelivr.net/gh/fasttime/jquery-screwed@3.3.1-screwed.3/jquery-3.3.1.screwed.js
+* https://cdn.staticaly.com/gh/fasttime/jquery-screwed/3.3.1-screwed.3/jquery-3.3.1.screwed.js
+* https://gitcdn.xyz/repo/fasttime/jquery-screwed/3.3.1-screwed.3/jquery-3.3.1.screwed.js
+* https://rawcdn.githack.com/fasttime/jquery-screwed/3.3.1-screwed.3/jquery-3.3.1.screwed.js
 
 ## Creation
 
