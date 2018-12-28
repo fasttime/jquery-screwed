@@ -1,5 +1,7 @@
 # jQuery *Screwed*
 
+[![NPM](https://nodei.co/npm/jquery-screwed.png?compact=true)](https://nodei.co/npm/jquery-screwed/)
+
 jQuery JavaScript library made using only six different characters: `!` `(` `)` `+` `[` `]`
 
 ## Usage
@@ -25,7 +27,7 @@ header.
 
 ### From NPM
 
-* https://cdn.jsdelivr.net/npm/jquery-screwed@3.3.1-screwed.2
+* https://cdn.jsdelivr.net/npm/jquery-screwed@3.3.1-screwed.2/jquery-3.3.1.screwed.js
 * https://unpkg.com/jquery-screwed@3.3.1-screwed.2
 
 ### From GitHub
