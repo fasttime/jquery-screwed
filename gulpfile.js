@@ -32,21 +32,27 @@ task
     'screw',
     callback =>
     {
-        const child_process = require('child_process');
+        const { fork } = require('child_process');
 
-        function execCallback(error, stdout, stderr)
-        {
-            if (stdout)
-                console.log(stdout);
-            if (stderr)
-                console.error(stderr);
-            callback(error);
-        }
-
-        const COMMAND =
-        'node node_modules/jscrewit/screw.js ' +
-        '-ct -f BROWSER node_modules/jquery/dist/jquery.min.js jquery-3.3.1.screwed.js';
-        child_process.exec(COMMAND, execCallback);
+        const { resolve } = require;
+        const modulePath = resolve('jscrewit/screw.js');
+        const jQueryPath = resolve('jquery/dist/jquery.min.js');
+        const jQueryScrewedPath = require('./package.json').main;
+        const child = fork(modulePath, ['-ct', '-f', 'BROWSER', jQueryPath, jQueryScrewedPath]);
+        child.on
+        (
+            'exit',
+            (code, signal) =>
+            {
+                let error;
+                if (code || signal)
+                {
+                    const detail = code ? `exit code ${code}` : `signal ${signal}`;
+                    error = `Could not create jQuery Screwed: ${detail}`;
+                }
+                callback(error);
+            }
+        );
     }
 );
 
