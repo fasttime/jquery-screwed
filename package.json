@@ -14,9 +14,8 @@
   "license": "MIT",
   "author": "Francesco Trotta <ft@fasttime.org> (https://github.com/fasttime)",
   "files": [
-    "jquery-*.screwed.js"
   ],
-  "main": "jquery-3.3.1.screwed",
+  "main": "jquery-3.3.1.screwed.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/fasttime/jquery-screwed.git"
@@ -26,10 +25,9 @@
   },
   "devDependencies": {
     "del": "~3.0.0",
-    "gulp": "~3.9.1",
-    "gulp-fasttime-lint": "~0.3.0",
+    "gulp": "~4.0.0",
+    "gulp-fasttime-lint": "~0.6.0",
     "jquery": "3.3.1",
-    "jscrewit": "~2.7.0",
-    "run-sequence": "~2.2.1"
+    "jscrewit": "~2.9.0"
   }
 }

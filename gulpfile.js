@@ -1,8 +1,8 @@
 'use strict';
 
-const gulp = require('gulp');
+const { parallel, series, task } = require('gulp');
 
-gulp.task
+task
 (
     'clean',
     () =>
@@ -14,21 +14,20 @@ gulp.task
     }
 );
 
-gulp.task
+task
 (
     'lint',
     () =>
     {
         const lint = require('gulp-fasttime-lint');
 
-        const src = ['*.js', '!*.screwed.js'];
-        const options = { envs: ['node'], parserOptions: { ecmaVersion: 6 } };
-        const stream = gulp.src(src).pipe(lint(options));
+        const stream =
+        lint({ src: ['*.js', '!*.screwed.js'], envs: ['node'], parserOptions: { ecmaVersion: 6 } });
         return stream;
     }
 );
 
-gulp.task
+task
 (
     'screw',
     callback =>
@@ -51,13 +50,4 @@ gulp.task
     }
 );
 
-gulp.task
-(
-    'default',
-    callback =>
-    {
-        const runSequence = require('run-sequence');
-
-        runSequence(['clean', 'lint'], 'screw', callback);
-    }
-);
+task('default', series(parallel('clean', 'lint'), 'screw'));
