@@ -13,8 +13,7 @@
   },
   "license": "MIT",
   "author": "Francesco Trotta <ft@fasttime.org> (https://github.com/fasttime)",
-  "files": [
-  ],
+  "files": [],
   "main": "jquery-3.3.1.screwed.js",
   "repository": {
     "type": "git",
@@ -28,6 +27,6 @@
     "gulp": "~4.0.0",
     "gulp-fasttime-lint": "~0.6.0",
     "jquery": "3.3.1",
-    "jscrewit": "~2.9.0"
+    "jscrewit": "~2.9.1"
   }
 }
