@@ -1,6 +1,4 @@
-# jQuery *Screwed*
-
-[![NPM](https://nodei.co/npm/jquery-screwed.png?compact=true)](https://nodei.co/npm/jquery-screwed/)
+# jQuery *Screwed* · [![npm version][npm badge]][npm url]
 
 jQuery JavaScript library made using only six different characters: `!` `(` `)` `+` `[` `]`
 
@@ -60,3 +58,6 @@ Node.js is *not* supported.
 
 jQuery Screwed is based on [jQuery](https://github.com/jquery/jquery).
 jQuery is Copyright JS Foundation and other contributors, and licensed under the MIT license.
+
+[npm badge]: https://badge.fury.io/js/jquery-screwed.svg
+[npm url]: https://www.npmjs.com/package/jquery-screwed
