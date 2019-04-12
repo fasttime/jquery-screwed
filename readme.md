@@ -7,7 +7,7 @@ jQuery JavaScript library made using only six different characters: `!` `(` `)` 
 You can use jQuery Screwed anywhere in your code like the regular jQuery.
 
 ```html
-<script src="jquery-3.3.1.screwed.js"></script>
+<script src="jquery-3.4.0.screwed.js"></script>
 ```
 
 ```html
@@ -23,17 +23,17 @@ $(function(){
 The following is a list of URLs that can be used to serve jQuery Screwed with proper Content-Type
 header.
 
-### From NPM
+### From npm
 
-* https://cdn.jsdelivr.net/npm/jquery-screwed@3.3.1-screwed.4/jquery-3.3.1.screwed.js
-* https://unpkg.com/jquery-screwed@3.3.1-screwed.4
+* https://cdn.jsdelivr.net/npm/jquery-screwed@3.4.0-screwed.1/jquery-3.4.0.screwed.js
+* https://unpkg.com/jquery-screwed@3.4.0-screwed.1
 
 ### From GitHub
 
-* https://cdn.jsdelivr.net/gh/fasttime/jquery-screwed@3.3.1-screwed.4/jquery-3.3.1.screwed.js
-* https://cdn.staticaly.com/gh/fasttime/jquery-screwed/3.3.1-screwed.4/jquery-3.3.1.screwed.js
-* https://gitcdn.xyz/repo/fasttime/jquery-screwed/3.3.1-screwed.4/jquery-3.3.1.screwed.js
-* https://rawcdn.githack.com/fasttime/jquery-screwed/3.3.1-screwed.4/jquery-3.3.1.screwed.js
+* https://cdn.jsdelivr.net/gh/fasttime/jquery-screwed@3.4.0-screwed.1/jquery-3.4.0.screwed.js
+* https://cdn.staticaly.com/gh/fasttime/jquery-screwed/3.4.0-screwed.1/jquery-3.4.0.screwed.js
+* https://gitcdn.xyz/repo/fasttime/jquery-screwed/3.4.0-screwed.1/jquery-3.4.0.screwed.js
+* https://rawcdn.githack.com/fasttime/jquery-screwed/3.4.0-screwed.1/jquery-3.4.0.screwed.js
 
 ## Creation
 
@@ -43,10 +43,10 @@ Below are the steps to recreate it manually.
 * Install [Node.js](https://nodejs.org) if you haven't done so yet.
 * Install JScrewIt: run in the command line<br>
   `npm install -g jscrewit`
-* Download jQuery—current stable version is 3.3.1: https://code.jquery.com/jquery-3.3.1.min.js
+* Download jQuery—current stable version is 3.4.0: https://code.jquery.com/jquery-3.4.0.min.js
 * Replace path names as appropriate and run<br>
-  `node jscrewit -ct -f BROWSER path/to/source/jquery-3.3.1.min.js
-  path/to/dest/jquery-3.3.1.screwed.js`
+  `node jscrewit -ct -f BROWSER path/to/source/jquery-3.4.0.min.js
+  path/to/dest/jquery-3.4.0.screwed.js`
 
 ## Browser Support
 

@@ -5,13 +5,12 @@ const { parallel, series, task } = require('gulp');
 task
 (
     'clean',
-    () =>
+    async () =>
     {
         const del = require('del');
 
-        const stream = del('*.screwed.js');
-        return stream;
-    }
+        await del('*.screwed.js');
+    },
 );
 
 task
@@ -22,9 +21,9 @@ task
         const lint = require('gulp-fasttime-lint');
 
         const stream =
-        lint({ src: ['*.js', '!*.screwed.js'], envs: ['node'], parserOptions: { ecmaVersion: 6 } });
+        lint({ src: ['*.js', '!*.screwed.js'], envs: ['node'], parserOptions: { ecmaVersion: 8 } });
         return stream;
-    }
+    },
 );
 
 task
@@ -51,9 +50,9 @@ task
                     error = `Could not create jQuery Screwed: ${detail}`;
                 }
                 callback(error);
-            }
+            },
         );
-    }
+    },
 );
 
 task('default', series(parallel('clean', 'lint'), 'screw'));
