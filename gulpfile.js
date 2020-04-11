@@ -18,10 +18,10 @@ task
     'lint',
     () =>
     {
-        const lint = require('gulp-fasttime-lint');
+        const lint = require('@fasttime/gulp-lint');
 
         const stream =
-        lint({ src: ['*.js', '!*.screwed.js'], envs: ['node'], parserOptions: { ecmaVersion: 8 } });
+        lint({ src: ['*.js', '!*.screwed.js'], envs: 'node', parserOptions: { ecmaVersion: 10 } });
         return stream;
     },
 );
@@ -37,8 +37,9 @@ task
         const modulePath = resolve('jscrewit/screw.js');
         const jQueryPath = resolve('jquery/dist/jquery.min.js');
         const jQueryScrewedPath = require('./package.json').main;
-        const child = fork(modulePath, ['-ct', '-f', 'BROWSER', jQueryPath, jQueryScrewedPath]);
-        child.on
+        const childProcess =
+        fork(modulePath, ['-ct', '-f', 'BROWSER', jQueryPath, jQueryScrewedPath]);
+        childProcess.on
         (
             'exit',
             (code, signal) =>
