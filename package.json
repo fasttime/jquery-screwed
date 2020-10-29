@@ -1,6 +1,6 @@
 {
   "name": "jquery-screwed",
-  "version": "3.5.1-screwed.1",
+  "version": "3.5.1-screwed.2",
   "description": "jQuery JavaScript library made of only six different characters: ! ( ) + [ ]",
   "keywords": [
     "jquery",
@@ -21,10 +21,10 @@
     "build": "npm install && gulp"
   },
   "devDependencies": {
-    "@fasttime/gulp-lint": "~0.27.1",
-    "del": "~5.1.0",
-    "gulp": "~4.0.2",
+    "@fasttime/gulp-lint": "latest",
+    "del": "latest",
+    "gulp": "latest",
     "jquery": "3.5.1",
-    "jscrewit": "~2.14.0"
+    "jscrewit": "latest"
   }
 }
