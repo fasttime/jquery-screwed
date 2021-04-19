@@ -25,15 +25,15 @@ header.
 
 ### From npm
 
-* https://cdn.jsdelivr.net/npm/jquery-screwed@3.6.0-screwed.1/jquery-3.6.0.screwed.js
-* https://unpkg.com/jquery-screwed@3.6.0-screwed.1
+* https://cdn.jsdelivr.net/npm/jquery-screwed@3.6.0-screwed.2/jquery-3.6.0.screwed.js
+* https://unpkg.com/jquery-screwed@3.6.0-screwed.2
 
 ### From GitHub
 
-* https://cdn.jsdelivr.net/gh/fasttime/jquery-screwed@3.6.0-screwed.1/jquery-3.6.0.screwed.js
-* https://cdn.staticaly.com/gh/fasttime/jquery-screwed/3.6.0-screwed.1/jquery-3.6.0.screwed.js
-* https://gitcdn.xyz/repo/fasttime/jquery-screwed/3.6.0-screwed.1/jquery-3.6.0.screwed.js
-* https://rawcdn.githack.com/fasttime/jquery-screwed/3.6.0-screwed.1/jquery-3.6.0.screwed.js
+* https://cdn.jsdelivr.net/gh/fasttime/jquery-screwed@3.6.0-screwed.2/jquery-3.6.0.screwed.js
+* https://cdn.staticaly.com/gh/fasttime/jquery-screwed/3.6.0-screwed.2/jquery-3.6.0.screwed.js
+* https://gitcdn.xyz/repo/fasttime/jquery-screwed/3.6.0-screwed.2/jquery-3.6.0.screwed.js
+* https://rawcdn.githack.com/fasttime/jquery-screwed/3.6.0-screwed.2/jquery-3.6.0.screwed.js
 
 ## Creation
 
