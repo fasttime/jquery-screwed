@@ -7,22 +7,20 @@ task
     'clean',
     async () =>
     {
-        const del = require('del');
+        const { deleteAsync } = await import('del');
 
-        await del('*.screwed.js');
+        await deleteAsync('*.screwed.js');
     },
 );
 
 task
 (
     'lint',
-    () =>
+    async () =>
     {
-        const lint = require('@fasttime/gulp-lint');
+        const { lint } = require('@fasttime/lint');
 
-        const stream =
-        lint({ src: ['*.js', '!*.screwed.js'], envs: 'node', parserOptions: { ecmaVersion: 10 } });
-        return stream;
+        await lint({ src: ['*.js', '!*.screwed.js'], jsVersion: 2020, envs: 'node' });
     },
 );
 
