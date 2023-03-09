@@ -21,8 +21,9 @@ function loadScript()
     {
         if (window.$)
         {
+            var version = $.fn.jquery;
             statusBlock.className = 'success';
-            statusBlock.textContent = 'jQuery Screwed was loaded correctly.';
+            statusBlock.textContent = 'jQuery Screwed ' + version + ' was loaded correctly.';
         }
         else
         {
