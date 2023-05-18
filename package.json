@@ -1,6 +1,6 @@
 {
   "name": "jquery-screwed",
-  "version": "3.6.4-screwed.1",
+  "version": "3.7.0-screwed.1",
   "description": "jQuery JavaScript library made of only six different characters: ! ( ) + [ ]",
   "keywords": [
     "jquery",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "author": "Francesco Trotta <ft@fasttime.org> (https://github.com/fasttime)",
   "files": [],
-  "main": "jquery-3.6.4.screwed.js",
+  "main": "jquery-3.7.0.screwed.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/fasttime/jquery-screwed.git"
@@ -24,7 +24,7 @@
     "@fasttime/lint": "latest",
     "del": "latest",
     "gulp": "latest",
-    "jquery": "3.6.4",
+    "jquery": "3.7.0",
     "jscrewit": "latest"
   }
 }
