@@ -1,6 +1,8 @@
 'use strict';
 
-const { parallel, series, task } = require('gulp');
+const { dirname, join }                 = require('node:path');
+const { parallel, series, src, task }   = require('gulp');
+const syncReadable                      = require('sync-readable');
 
 task
 (
@@ -16,12 +18,30 @@ task
 task
 (
     'lint',
-    async () =>
-    {
-        const { lint } = require('@fasttime/lint');
+    syncReadable
+    (
+        async () =>
+        {
+            const { createConfig }  = require('@origin-1/eslint-config');
+            const globals           = require('globals');
+            const gulpESLintNew     = require('gulp-eslint-new');
 
-        await lint({ src: ['*.js', '!*.screwed.js'], jsVersion: 2020, envs: 'node' });
-    },
+            const overrideConfig =
+            await createConfig
+            (
+                {
+                    jsVersion:          2020,
+                    languageOptions:    { globals: globals.node, sourceType: 'script' },
+                },
+            );
+            const stream =
+            src(['*.js', '!*.screwed.js'])
+            .pipe(gulpESLintNew({ overrideConfig, overrideConfigFile: true, warnIgnored: true }))
+            .pipe(gulpESLintNew.format('compact'))
+            .pipe(gulpESLintNew.failAfterError());
+            return stream;
+        },
+    ),
 );
 
 task
@@ -33,7 +53,7 @@ task
 
         const { resolve } = require;
         const modulePath = resolve('jscrewit/screw.js');
-        const jQueryPath = resolve('jquery/dist/jquery.min.js');
+        const jQueryPath = join(dirname(resolve('jquery')), 'jquery.min.js');
         const jQueryScrewedPath = require('./package.json').main;
         const childProcess =
         fork(modulePath, ['-ct', '-f', 'BROWSER', jQueryPath, jQueryScrewedPath]);

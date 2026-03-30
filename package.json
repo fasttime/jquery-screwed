@@ -1,6 +1,6 @@
 {
   "name": "jquery-screwed",
-  "version": "3.7.1-screwed.1",
+  "version": "4.0.0-screwed.1",
   "description": "jQuery JavaScript library made of only six different characters: ! ( ) + [ ]",
   "keywords": [
     "jquery",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "author": "Francesco Trotta <ft@fasttime.org> (https://github.com/fasttime)",
   "files": [],
-  "main": "jquery-3.7.1.screwed.js",
+  "main": "jquery-4.0.0.screwed.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/fasttime/jquery-screwed.git"
@@ -21,10 +21,14 @@
     "build": "npm install && gulp"
   },
   "devDependencies": {
-    "@fasttime/lint": "latest",
+    "@origin-1/eslint-config": "latest",
     "del": "latest",
+    "eslint-formatter-compact": "latest",
+    "globals": "latest",
     "gulp": "latest",
-    "jquery": "3.7.1",
-    "jscrewit": "latest"
+    "gulp-eslint-new": "latest",
+    "jquery": "4.0.0",
+    "jscrewit": "latest",
+    "sync-readable": "latest"
   }
 }
