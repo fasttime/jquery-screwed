@@ -25,15 +25,15 @@ header.
 
 ### From npm
 
-* https://cdn.jsdelivr.net/npm/jquery-screwed@4.0.0-screwed.1/jquery-4.0.0.screwed.js
-* https://unpkg.com/jquery-screwed@4.0.0-screwed.1
+* https://cdn.jsdelivr.net/npm/jquery-screwed@4.0.0-screwed.2/jquery-4.0.0.screwed.js
+* https://unpkg.com/jquery-screwed@4.0.0-screwed.2
 
 ### From GitHub
 
-* https://cdn.jsdelivr.net/gh/fasttime/jquery-screwed@4.0.0-screwed.1/jquery-4.0.0.screwed.js
-* https://cdn.staticaly.com/gh/fasttime/jquery-screwed/4.0.0-screwed.1/jquery-4.0.0.screwed.js
-* https://gitcdn.xyz/repo/fasttime/jquery-screwed/4.0.0-screwed.1/jquery-4.0.0.screwed.js
-* https://rawcdn.githack.com/fasttime/jquery-screwed/4.0.0-screwed.1/jquery-4.0.0.screwed.js
+* https://cdn.jsdelivr.net/gh/fasttime/jquery-screwed@4.0.0-screwed.2/jquery-4.0.0.screwed.js
+* https://cdn.staticaly.com/gh/fasttime/jquery-screwed/4.0.0-screwed.2/jquery-4.0.0.screwed.js
+* https://gitcdn.xyz/repo/fasttime/jquery-screwed/4.0.0-screwed.2/jquery-4.0.0.screwed.js
+* https://rawcdn.githack.com/fasttime/jquery-screwed/4.0.0-screwed.2/jquery-4.0.0.screwed.js
 
 ## Creation
 
@@ -58,5 +58,5 @@ Node.js is *not* supported.
 jQuery Screwed is based on [jQuery](https://github.com/jquery/jquery).
 jQuery is Copyright JS Foundation and other contributors, and licensed under the MIT license.
 
-[npm badge]: https://badge.fury.io/js/jquery-screwed.svg
+[npm badge]: https://img.shields.io/npm/v/jquery-screwed?logo=npm
 [npm url]: https://www.npmjs.com/package/jquery-screwed

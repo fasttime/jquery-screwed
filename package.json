@@ -1,6 +1,6 @@
 {
   "name": "jquery-screwed",
-  "version": "4.0.0-screwed.1",
+  "version": "4.0.0-screwed.2",
   "description": "jQuery JavaScript library made of only six different characters: ! ( ) + [ ]",
   "keywords": [
     "jquery",
@@ -30,5 +30,8 @@
     "jquery": "4.0.0",
     "jscrewit": "latest",
     "sync-readable": "latest"
+  },
+    "engines": {
+    "node": ">=20"
   }
 }
