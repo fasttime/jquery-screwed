@@ -15,7 +15,7 @@
   "main": "jquery-4.0.0.screwed.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fasttime/jquery-screwed.git"
+    "url": "git+https://github.com/fasttime/jquery-screwed.git"
   },
   "scripts": {
     "build": "npm install && gulp"
@@ -31,7 +31,7 @@
     "jscrewit": "latest",
     "sync-readable": "latest"
   },
-    "engines": {
+  "engines": {
     "node": ">=20"
   }
 }
