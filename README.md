@@ -27,13 +27,12 @@ header.
 
 * https://cdn.jsdelivr.net/npm/jquery-screwed@4.0.0-screwed.2/jquery-4.0.0.screwed.js
 * https://unpkg.com/jquery-screwed@4.0.0-screwed.2
+* https://cdn.statically.io/npm/jquery-screwed@4.0.0-screwed.2/jquery-4.0.0.screwed.js
 
 ### From GitHub
-
 * https://cdn.jsdelivr.net/gh/fasttime/jquery-screwed@4.0.0-screwed.2/jquery-4.0.0.screwed.js
-* https://cdn.staticaly.com/gh/fasttime/jquery-screwed/4.0.0-screwed.2/jquery-4.0.0.screwed.js
-* https://gitcdn.xyz/repo/fasttime/jquery-screwed/4.0.0-screwed.2/jquery-4.0.0.screwed.js
 * https://rawcdn.githack.com/fasttime/jquery-screwed/4.0.0-screwed.2/jquery-4.0.0.screwed.js
+* https://cdn.statically.io/gh/fasttime/jquery-screwed@4.0.0-screwed.2/jquery-4.0.0.screwed.js
 
 ## Creation
 
